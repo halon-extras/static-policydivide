@@ -1,0 +1,14 @@
+version: '2'
+services:
+  halon-smtpd:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        HALON_REPO_USER: ${HALON_REPO_USER}
+        HALON_REPO_PASS: ${HALON_REPO_PASS}
+      platforms:
+        - linux/amd64
+    volumes:
+      - ../:/static-policydivide
+      - ./smtpd/dist:/etc/halon

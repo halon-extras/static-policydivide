@@ -1,0 +1,5 @@
+CMakeLists.txt linguist-vendored
+.devcontainer/Dockerfile linguist-vendored
+.devcontainer/entrypoint.sh linguist-vendored
+build/**/Dockerfile linguist-vendored
+build/**/build.sh linguist-vendored

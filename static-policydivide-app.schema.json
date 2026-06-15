@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "static-policydivide schema",
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["hosts"],
+	"properties": {
+		"hosts": {
+			"type": "integer",
+			"minimum": 1,
+			"description": "The amount of hosts to divide concurrency and rates by"
+		}
+	}
+}
