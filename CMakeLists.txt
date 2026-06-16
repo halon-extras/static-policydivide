@@ -37,6 +37,7 @@ ENDIF()
 
 SET(CMAKE_BUILD_TYPE Release)
 SET(CMAKE_CXX_FLAGS_RELEASE "-std=c++17 -Wall -Wvla -Wshadow -Wconversion -Wno-sign-conversion -Wno-c++11-narrowing -O2 -fno-strict-aliasing -Wextra -Wno-unused-parameter")
+SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 ADD_LIBRARY(static-policydivide SHARED
 	static-policydivide.cpp
